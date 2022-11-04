@@ -1,0 +1,12 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap'); /* Inter google font */
+/* font-family: 'Inter', sans-serif; */
+
+@font-face { /* Calculatrix 7 font, by Pixel Kitchen, public domain */
+    font-family: 'Calculatrix7';
+    src: url('Calculatrix7Regular-zEM1.ttf') format('truetype');
+}
+
+#title {
+    font-family: 'Calculatrix7';
+}
