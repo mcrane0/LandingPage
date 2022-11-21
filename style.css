@@ -140,6 +140,7 @@ body {
 /* about section */
 #about {
     line-height:1.5;
+	margin-bottom:40px;
 }
 #about h2, #about > p {
     text-align: center;
@@ -169,6 +170,22 @@ body {
     text-align: center;
     margin:20px;
 }
+
+/* credits section */
+#credits {
+    line-height:1.5;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+#credits h3 {
+    text-align: center;
+    margin:20px;
+}
+#credits > div {
+	display:flex;
+	justify-content:space-evenly;
+    margin-bottom:20px;
+{
 
 
 /* media queries */
