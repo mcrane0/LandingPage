@@ -14,6 +14,8 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+
+/* main section */
 #main {
     height: 100vh;
     position:relative;
@@ -132,6 +134,40 @@ body {
 
 	padding: 12px 38px;
     font-weight:600;
+}
+
+
+/* about section */
+#about {
+    line-height:1.5;
+}
+#about h2, #about > p {
+    text-align: center;
+    margin:20px;
+}
+#get-started {
+	display:flex;
+	justify-content:space-evenly;
+    margin-bottom:20px;
+}
+#get-started div {
+	width:25vw;
+}
+#about img {
+	width:100%;
+	margin-bottom:10px;
+}
+
+/* contact section */
+#contact {
+    line-height:1.5;
+    background-color: lightgray;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+#contact h2, #contact > p {
+    text-align: center;
+    margin:20px;
 }
 
 
