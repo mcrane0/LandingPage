@@ -185,7 +185,7 @@ body {
 	display:flex;
 	justify-content:space-evenly;
     margin-bottom:20px;
-{
+}
 
 
 /* media queries */
@@ -219,4 +219,44 @@ body {
 	#main {
 		background-image: url("backgrounds/odometers-2-3.jpg");
 	}
+}
+
+/* tutorials.html styling */
+#page-title {
+    position:relative;
+    z-index:1;
+    text-align: center;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding:20px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size:60px;
+}
+#tutorials-content {
+    line-height: 1.5;
+    padding:20px;
+}
+#tutorials-content > div {
+    display:block;
+    width:100%;
+    height:28.5vh;
+
+    border:2px solid gray;
+    border-radius:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#tutorials-content > div:hover {
+    border:5px solid gray;
+    border-radius:15px;
+}
+#tutorials-content h3 {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#tutorial-thumbnail {
+    float:left;
+    margin:10px;
+    height:25vh;
 }
