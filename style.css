@@ -1,12 +1,169 @@
 /* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap'); /* Inter google font */
-/* font-family: 'Inter', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap'); /* Inter google font */
 
 @font-face { /* Calculatrix 7 font, by Pixel Kitchen, public domain */
     font-family: 'Calculatrix7';
     src: url('Calculatrix7Regular-zEM1.ttf') format('truetype');
 }
 
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+#main {
+    height: 100vh;
+    position:relative;
+
+    display:flex;
+    justify-content: center;
+
+	background-color:black;
+	background-image: url("backgrounds/odometers.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	
+    color:white;
+}
+
+#credit {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:50vw;
+    margin:5px;
+
+    font-size:10pt;
+    font-weight:500;
+}
+
+#navigation {
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:0;
+    width:100%;
+    box-sizing:border-box;
+    padding:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#nav-links {
+    display:flex;
+    flex-wrap:wrap;
+}
+#nav-links > * {
+	background-image: url("buttons/navbuttonbg.png");
+	background-size: auto 100%;
+
+    padding: 12px 32px;
+    margin-left:5px;
+    margin-right:5px;
+    border-radius: 10px;
+
+	color: white;
+	font-weight:700;
+	text-decoration:none;
+
+    transition-duration: 0.25s;
+}
+#nav-links > *:hover {
+	background-image: url("buttons/navbuttonbg-hover.png");
+	background-size: auto 100%;
+
+	padding: 12px 38px;
+    font-weight:800;
+}
 #title {
     font-family: 'Calculatrix7';
+    font-size:40px;
+    height:45px;
+    display:inline-block;
+    margin-left:5px;
+    margin-right:5px;
+}
+#title > a {
+    color: white;
+	text-decoration:none;
+}
+
+#content {
+    position:relative;
+    z-index:1;
+    text-align: center;
+    margin-top:auto;
+    margin-bottom:auto;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#content > h1 {
+    margin:20px;
+}
+#content > p {
+    margin-bottom:20px;
+}
+#about-button {
+	background-image: url("buttons/aboutbuttonbg.png");
+	background-size: auto 100%;
+
+    display: inline-block;
+    margin-bottom:20px;
+    padding: 12px 32px;
+    border-radius: 10px;
+
+	color: white;
+	font-weight:500;
+	text-decoration:none;
+
+    transition-duration: 0.25s;
+}
+#about-button:hover {
+	background-image: url("buttons/aboutbuttonbg-hover.png");
+	background-size: auto 100%;
+
+	padding: 12px 38px;
+    font-weight:600;
+}
+
+
+/* media queries */
+@media (max-width: 622px) { /* when nav-links wrap under title */
+    #nav-links > * {
+        margin-top:10px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 160vh) {
+	#main {
+		background-image: url("backgrounds/odometers-3-2.jpg");
+	}
+}
+@media (orientation: landscape) and (max-width: 110vh) {
+	#main {
+		background-image: url("backgrounds/odometers-1-1.jpg");
+	}
+}
+@media (orientation: portrait) {
+	#main {
+		background-image: url("backgrounds/odometers-1-1.jpg");
+	}
+}
+@media (orientation: portrait) and (max-height: 188vw) {
+	#main {
+		background-image: url("backgrounds/odometers-9-16.jpg");
+	}
+}
+@media (orientation: portrait) and (max-height: 160vw) {
+	#main {
+		background-image: url("backgrounds/odometers-2-3.jpg");
+	}
 }
